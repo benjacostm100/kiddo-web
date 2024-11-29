@@ -1,0 +1,248 @@
+/* Estilos para la sección principal */
+section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+}
+
+/* Contenedor de tarjetas de productos */
+.product-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Título de la sección */
+.product-cards h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+/* Contenedor de las tarjetas de producto */
+.cardsContainer {
+    gap: 20px;
+    display: flex;
+    flex-wrap: wrap; /* Permite que las tarjetas se ajusten en varias filas */
+    justify-content: center; /* Centra las tarjetas */
+    padding: 20px;
+}
+
+/* Estilos para cada tarjeta */
+.card {
+    position: relative;
+    width: 300px;
+    max-height: 300px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    margin: 10px; /* Agrega espacio entre las tarjetas */
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.card:hover img {
+    transform: scale(1.1);
+}
+
+.card:hover .card-overlay {
+    opacity: 1;
+}
+
+/* Sección de Kiddo Card */
+.kiddo-card-section {
+    display: flex;
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    text-align: center;
+    padding: 40px 20px;
+    max-width: 1200px;
+    width: 100%; /* Asegura que ocupe todo el ancho disponible */
+    height: 80vh; /* O una altura personalizada */
+    margin: 0 auto; /* Centra el contenedor en el eje horizontal */
+    background-color: #ffa500;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #ffffff;
+    border-radius: 8px;
+}
+
+
+.kiddo-card-info h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.kiddo-card-info p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    width: 60%;
+    margin: 20px auto;
+}
+
+.kiddo-card-info button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: white;
+    background-color: #045699;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.kiddo-card-info button:hover {
+    background-color: #033a63;
+}
+
+/* Modal */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    color: #000;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 450px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.modal-content form div {
+    margin-bottom: 10px;
+}
+
+.modal-content label {
+    margin-top: 10px;
+    display: block;
+    font-size: 1rem;
+}
+
+.modal-content input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.modal-content button {
+    padding: 10px 20px;
+    background-color: #045699;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 15px;
+}
+
+.modal-content button:hover {
+    background-color: #033a63;
+}
+
+.close {
+    font-size: 2rem;
+    color: #333;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.close:hover {
+    color: #000;
+}
+
+/* Sección de Clientes Satisfechos */
+.clientes-satisfechos {
+    padding: 40px 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.clientes-satisfechos h2 {
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+.scroll-container {
+    display: flex;
+    justify-content: center;
+    overflow-x: auto;
+    gap: 20px;
+}
+
+.cliente-card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    text-align: center;
+}
+
+.cliente-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.cliente-card h5 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.cliente-card p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.estrellas {
+    font-size: 1.2rem;
+    color: #f39c12;
+}

@@ -1,0 +1,102 @@
+
+/* Menu */
+.menu-container {
+    text-align: center;
+    width: 80%;
+    margin: 20px auto;
+}
+
+.menu-container h2 {
+    color: #045699;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+    max-width: 1000px; /* Tamaño máximo del contenedor */
+    margin: 0 auto; /* Centra el contenido horizontalmente */
+    padding: 60px; /* Espacio interno desde los márgenes */
+}
+
+.menu-item {
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: transform 0.2s;
+}
+
+.menu-item:hover {
+    transform: scale(1.05);
+}
+
+.menu-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.menu-item p {
+    margin: 0;
+    font-size: 1rem;
+    color: black;
+    font-family: Arial, sans-serif;
+}
+
+.cheeseburger {
+    color: rgb(0, 0, 0); 
+    font-family: Arial, sans-serif; 
+    font-size: 15px; 
+    padding: 10px; 
+    list-style-type: none; 
+}
+
+
+.lista li {
+    color: rgb(0, 0, 0);
+    list-style-type: none; 
+    padding: 0;
+    text-align: left;
+    font-size: 14px;
+    margin-left: 10px;
+    
+}
+.menu-item p,
+.menu-item ul{
+    text-align: left;
+    margin: 0;
+    padding: 5px 0;
+}
+.menu-item h3{
+    text-align: center;
+    color: #045699;
+}
+.Comprar {
+    display: block;
+    margin: 20px auto; 
+    padding: 15px 30px;
+    background-color: #045699;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 8px;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    max-width: 200px; 
+}
+
+.Comprar:hover {
+    background-color: #033d6e;
+    transform: scale(1.05);
+}
+
+.Comprar:active {
+    background-color: #022847;
+    transform: scale(0.98);
+}
